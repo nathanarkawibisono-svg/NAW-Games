@@ -65,7 +65,6 @@ const summaryRoom = document.getElementById('summaryRoom');
 const summaryDuration = document.getElementById('summaryDuration');
 const summaryTotal = document.getElementById('summaryTotal');
 const submitBtn = document.getElementById('submitBtn');
-const whatsappBtn = document.getElementById('whatsappBtn');
 const loadingMessage = document.getElementById('loadingMessage');
 const successMessage = document.getElementById('successMessage');
 const errorMessage = document.getElementById('errorMessage');
@@ -232,16 +231,6 @@ bookingForm.addEventListener('submit', async (e) => {
     
     submitBtn.disabled = false;
     submitBtn.textContent = 'Confirm Booking';
-});
-
-// WhatsApp button handler
-whatsappBtn.addEventListener('click', () => {
-    if (!validateForm()) {
-        return;
-    }
-    
-    const formData = getFormData();
-    sendBookingWhatsApp(formData);
 });
 
 // Show success message
