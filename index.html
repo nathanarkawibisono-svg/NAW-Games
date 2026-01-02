@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAW Games - Premium Internet Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>NAW Games</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">NAW Games</h1>
+                <p class="hero-subtitle">Premium Internet Cafe Experience</p>
+                <p class="hero-description">Comfortable gaming environment with state-of-the-art facilities</p>
+                <a href="#booking" class="btn btn-primary">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <p class="section-subtitle">Experience gaming at its finest with our premium amenities</p>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">📍</div>
+                    <h3>Strategic Location</h3>
+                    <p>Comfortable and easily accessible location for your convenience</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">❄️</div>
+                    <h3>Fully Air-Conditioned</h3>
+                    <p>All rooms are fully air-conditioned for maximum comfort</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">📺</div>
+                    <h3>Large Screen TVs</h3>
+                    <p>43-inch to 65-inch TVs for an immersive gaming experience</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🚗</div>
+                    <h3>Ample Parking</h3>
+                    <p>Spacious parking area available for all visitors</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🍕</div>
+                    <h3>Food & Beverages</h3>
+                    <p>Wide selection of food and beverages available on-site</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">🎮</div>
+                    <h3>Premium Gaming</h3>
+                    <p>High-performance gaming equipment for the best experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Types Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2 class="section-title">Room Types & Pricing</h2>
+            <p class="section-subtitle">Choose the perfect room for your gaming needs</p>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-badge">Standard</div>
+                    <h3>Regular Room</h3>
+                    <div class="room-price">
+                        <span class="price">Rp 10,000</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="room-features">
+                        <li>✓ Comfortable seating</li>
+                        <li>✓ Standard gaming setup</li>
+                        <li>✓ Air-conditioned</li>
+                        <li>✓ TV available</li>
+                    </ul>
+                </div>
+                <div class="room-card">
+                    <div class="room-badge">Popular</div>
+                    <h3>Premium Room</h3>
+                    <div class="room-price">
+                        <span class="price">Rp 15,000</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="room-features">
+                        <li>✓ Enhanced gaming setup</li>
+                        <li>✓ Larger screen TV</li>
+                        <li>✓ Premium seating</li>
+                        <li>✓ Priority support</li>
+                    </ul>
+                </div>
+                <div class="room-card featured">
+                    <div class="room-badge">VIP</div>
+                    <h3>VIP Room 1</h3>
+                    <div class="room-price">
+                        <span class="price">Rp 45,000</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="room-features">
+                        <li>✓ Luxury gaming experience</li>
+                        <li>✓ 65-inch TV</li>
+                        <li>✓ Premium amenities</li>
+                        <li>✓ Exclusive access</li>
+                    </ul>
+                </div>
+                <div class="room-card">
+                    <div class="room-badge">VIP</div>
+                    <h3>VIP Room 2</h3>
+                    <div class="room-price">
+                        <span class="price">Rp 40,000</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="room-features">
+                        <li>✓ Premium gaming setup</li>
+                        <li>✓ Large screen TV</li>
+                        <li>✓ Comfortable environment</li>
+                        <li>✓ VIP treatment</li>
+                    </ul>
+                </div>
+                <div class="room-card">
+                    <div class="room-badge">Special</div>
+                    <h3>Simulator Room</h3>
+                    <div class="room-price">
+                        <span class="price">Rp 25,000</span>
+                        <span class="period">/ hour</span>
+                    </div>
+                    <ul class="room-features">
+                        <li>✓ Specialized simulator setup</li>
+                        <li>✓ Immersive experience</li>
+                        <li>✓ Unique gaming options</li>
+                        <li>✓ Advanced equipment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">Game Types Available</h2>
+            <p class="section-subtitle">Play your favorite games on our high-performance systems</p>
+            <div class="games-grid">
+                <div class="game-category">
+                    <h3>🎮 PC Games</h3>
+                    <p>Latest AAA titles, indie games, and classic favorites</p>
+                </div>
+                <div class="game-category">
+                    <h3>🎯 Competitive Gaming</h3>
+                    <p>Esports titles including MOBA, FPS, and Battle Royale games</p>
+                </div>
+                <div class="game-category">
+                    <h3>🎲 Casual Games</h3>
+                    <p>Relaxing games for casual gaming sessions</p>
+                </div>
+                <div class="game-category">
+                    <h3>🎪 Simulator Games</h3>
+                    <p>Racing, flight, and other simulation experiences</p>
+                </div>
+                <div class="game-category">
+                    <h3>🎬 Console Games</h3>
+                    <p>Popular console titles available on our systems</p>
+                </div>
+                <div class="game-category">
+                    <h3>🌐 Online Games</h3>
+                    <p>MMORPGs, online multiplayer, and browser-based games</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Your Room</h2>
+            <p class="section-subtitle">Reserve your gaming session in advance</p>
+            <div class="booking-container">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-group">
+                        <label for="roomType">Room Type</label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">Select a room type</option>
+                            <option value="regular">Regular Room - Rp 10,000/hour</option>
+                            <option value="premium">Premium Room - Rp 15,000/hour</option>
+                            <option value="vip1">VIP Room 1 - Rp 45,000/hour</option>
+                            <option value="vip2">VIP Room 2 - Rp 40,000/hour</option>
+                            <option value="simulator">Simulator Room - Rp 25,000/hour</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Start Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (hours)</label>
+                        <select id="duration" name="duration" required>
+                            <option value="1">1 hour</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4">4 hours</option>
+                            <option value="5">5+ hours</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cash" checked>
+                                <span>💵 Cash</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="transfer">
+                                <span>🏦 Bank Transfer</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="ewallet">
+                                <span>📱 E-Wallet</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes (optional)</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Any special requests or notes..."></textarea>
+                    </div>
+                    <div class="price-summary" id="priceSummary" style="display: none;">
+                        <h4>Booking Summary</h4>
+                        <p>Room: <span id="summaryRoom"></span></p>
+                        <p>Duration: <span id="summaryDuration"></span> hour(s)</p>
+                        <p class="total-price">Total: <span id="summaryTotal"></span></p>
+                    </div>
+                    <div id="loadingMessage" style="display: none; text-align: center; padding: 1rem; color: var(--primary-color);">
+                        Sending booking information...
+                    </div>
+                    <div id="successMessage" style="display: none; text-align: center; padding: 1rem; background: #10b981; color: white; border-radius: 8px; margin-bottom: 1rem;">
+                        ✓ Booking submitted successfully! You will receive a confirmation shortly.
+                    </div>
+                    <div id="errorMessage" style="display: none; text-align: center; padding: 1rem; background: #ef4444; color: white; border-radius: 8px; margin-bottom: 1rem;">
+                        ✗ Failed to send booking. Please try WhatsApp option below.
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Confirm Booking</button>
+                    <div style="text-align: center; margin-top: 1rem; padding-top: 1rem; border-top: 2px solid var(--border-color);">
+                        <p style="margin-bottom: 0.5rem; color: var(--text-light); font-size: 0.9rem;">Or send via WhatsApp (backup method):</p>
+                        <button type="button" class="btn btn-whatsapp" id="whatsappBtn">📱 Send via WhatsApp</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">We're located at a convenient and strategic location</p>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon">🏢</div>
+                    <h3>NAW Games</h3>
+                    <p>Jl. Durian Raya No. 95</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Contact Us</h3>
+                    <p>For bookings and inquiries, please visit us or call</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3>Operating Hours</h3>
+                    <p>Open daily for your gaming needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NAW Games</h3>
+                    <p>Premium Internet Cafe Experience</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Jl. Durian Raya No. 95</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NAW Games. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
